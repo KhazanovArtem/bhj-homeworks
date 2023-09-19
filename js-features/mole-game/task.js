@@ -15,6 +15,11 @@ for (i = 1; i < 10; i++) {
             }
         } else {
             lost.textContent++;
+            if (lost.textContent == 5) {
+                alert("Вы Проиграли!");
+                dead.textContent = 0;
+                lost.textContent = 0;
+            }
         }
     }
 
