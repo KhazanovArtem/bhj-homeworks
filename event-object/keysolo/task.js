@@ -17,6 +17,10 @@ class Game {
   }
 
   registerEvents() {
+    document.addEventListener('keyup', (e) => {
+      if (e.key === 'Control' || e.key === 'Alt' || e.key === 'Shift') return;
+      e.key.toLowerCase() == this.currentSymbol.textContent ? this.success() : this.fail();
+    });
     /*
       TODO:
       Написать обработчик события, который откликается
