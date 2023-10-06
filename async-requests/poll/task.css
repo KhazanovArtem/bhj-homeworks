@@ -9,3 +9,23 @@ body {
 .poll__title {
   margin-bottom: 20px;
 }
+
+.poll__answer {
+  margin-right: 15px;
+}
+
+.poll__answers {
+  display: none;
+}
+
+.poll__answers_active {
+  display: block;
+}
+
+.stat {
+  display: flex;
+}
+
+.stat_count {
+  font-weight: bold;
+}
